@@ -1,0 +1,12 @@
+export const clamp01 = (t: number) => Math.min(1, Math.max(0, t));
+export const easeOutCubic = (t: number) => 1 - Math.pow(1 - clamp01(t), 3);
+export const easeOutQuint = (t: number) => 1 - Math.pow(1 - clamp01(t), 5);
+export const easeInCubic = (t: number) => Math.pow(clamp01(t), 3);
+export const easeInOut = (t: number) => { const x = clamp01(t); return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+export const easeInOutQuint = (t: number) => { const x = clamp01(t); return x < 0.5 ? 16 * x ** 5 : 1 - Math.pow(-2 * x + 2, 5) / 2; };
+export const backOut = (t: number, s = 1.70158) => { const x = clamp01(t) - 1; return x * x * ((s + 1) * x + s) + 1; };
+export const springy = (t: number, bounce = 0.35) => { const x = Math.max(0, t); return x >= 1.6 ? 1 : 1 - Math.exp(-6 * x) * Math.cos(x * (5 + bounce * 10)); };
+export const range = (f: number, a: number, len: number) => clamp01((f - a) / len);
+export const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+export const seeded = (seed: number) => { let s = seed; return () => { s = (s * 16807) % 2147483647; return s / 2147483647; }; };
+export const hexRgb = (h: string) => { const x = h.replace('#', ''); const n = parseInt(x.length === 3 ? x.split('').map((c) => c + c).join('') : x, 16); return `${(n >> 16) & 255},${(n >> 8) & 255},${n & 255}`; };

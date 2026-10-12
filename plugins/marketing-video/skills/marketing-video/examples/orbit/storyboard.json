@@ -1,0 +1,238 @@
+{
+ "name": "orbit-showcase",
+ "brief": {
+  "message": "Orbit makes small daily habits effortless to keep",
+  "tone": "fresh · app launch · confident",
+  "feel": "this is easy, I can keep this up",
+  "audience": "people building habits",
+  "channel": "Reels/TikTok 9:16, music",
+  "banned": [
+   "crossfade",
+   "bouncy easing",
+   "glow on UI text",
+   "particles",
+   "text over UI",
+   "two phones on screen",
+   "dead frame > 1 s"
+  ]
+ },
+ "fps": 30,
+ "bpm": 124,
+ "format": "reels",
+ "music": {
+  "src": "music.wav",
+  "mood": "bright"
+ },
+ "sfx": {
+  "src": "sfx.wav"
+ },
+ "brand": {
+  "look": "keynote",
+  "grain": 0.3,
+  "vignette": 0.45,
+  "handheld": 1,
+  "hlStyle": "color",
+  "calloutStyle": "zoom",
+  "colors": {
+   "bg": "#0D1117",
+   "bg2": "#161C25",
+   "card": "#161C25",
+   "ink": "#F4F6FA",
+   "inkSoft": "#8D99AB",
+   "accent": "#FF7A59",
+   "accent2": "#FFC15E",
+   "squiggle": "#FF7A59",
+   "dark": "#0D1117",
+   "darkInk": "#F4F6FA",
+   "shadow": "#000000",
+   "onAccent": "#1B0D07"
+  },
+  "fonts": {
+   "display": "Plus Jakarta Sans",
+   "displayWeight": 800,
+   "serif": "Plus Jakarta Sans"
+  },
+  "logo": "assets/orbit-icon.png",
+  "world": {
+   "kind": "aurora",
+   "colors": [
+    "#FF7A59",
+    "#0D1117",
+    "#2A1F2E",
+    "#FFC15E"
+   ],
+   "symbols": [
+    "check",
+    "star",
+    "bolt",
+    "clock",
+    "heart",
+    "chart",
+    "calendar"
+   ],
+   "rays": true,
+   "floor": true
+  }
+ },
+ "sections": [
+  {
+   "type": "hook",
+   "beats": 6,
+   "lines": [
+    {
+     "text": "Small habits.",
+     "size": 118
+    },
+    {
+     "text": "*Big orbit.",
+     "size": 118
+    }
+   ],
+   "ledger": {
+    "why": "claim in under a second; the phone whips in on the downbeat"
+   }
+  },
+  {
+   "type": "feature",
+   "beats": 12.5,
+   "chip": "Today",
+   "transition": "whip",
+   "clip": {
+    "name": "today",
+    "from": 0.3
+   },
+   "titles": [
+    {
+     "at": 0,
+     "l1": "Check it off,",
+     "l2": "*one tap."
+    }
+   ],
+   "callouts": [
+    {
+     "tap": 0,
+     "text": "One-tap check-off",
+     "sub": "ring fills · streak +1",
+     "icon": "check",
+     "beats": 4
+    },
+    {
+     "tap": 1,
+     "until": 3,
+     "text": "Track amounts",
+     "sub": "8 glasses of water",
+     "icon": "chart",
+     "beats": 5,
+     "zoom": false
+    }
+   ],
+   "widgets": [
+    {
+     "type": "stat",
+     "at": 10,
+     "beats": 2.5,
+     "from": 12,
+     "value": 13,
+     "suffix": "days",
+     "label": "streak"
+    }
+   ],
+   "ledger": {
+    "why": "core loop first: check, count, streak",
+    "surprise": "counting streak widget",
+    "new_component": "tap-group callout"
+   }
+  },
+  {
+   "type": "feature",
+   "beats": 19.5,
+   "chip": "New habit",
+   "transition": "flood",
+   "clip": {
+    "name": "add",
+    "from": 0.3
+   },
+   "titles": [
+    {
+     "at": 0,
+     "l1": "New habit,",
+     "l2": "*in seconds."
+    }
+   ],
+   "callouts": [
+    {
+     "tap": 3,
+     "until": 5,
+     "text": "Your schedule",
+     "sub": "days and a reminder time",
+     "icon": "calendar",
+     "beats": 3.5
+    },
+    {
+     "text": "Added to today",
+     "sub": "reminder set for 08:00",
+     "icon": "check",
+     "beats": 4,
+     "t": 7.35,
+     "x": 201,
+     "y": 376
+    }
+   ],
+   "ledger": {
+    "why": "the last tap floods the screen and contracts into the next screen",
+    "surprise": "flood"
+   }
+  },
+  {
+   "type": "feature",
+   "beats": 14.5,
+   "chip": "Stats",
+   "transition": "push",
+   "clip": {
+    "name": "stats",
+    "from": 0.3
+   },
+   "titles": [
+    {
+     "at": 0,
+     "l1": "Watch your",
+     "l2": "*orbit grow."
+    }
+   ],
+   "callouts": [
+    {
+     "tap": 1,
+     "text": "Week or month",
+     "sub": "87% completion",
+     "icon": "chart",
+     "beats": 4
+    }
+   ],
+   "widgets": [
+    {
+     "type": "ring",
+     "at": 9.5,
+     "beats": 4,
+     "progress": 0.87,
+     "label": "habits kept"
+    }
+   ],
+   "ledger": {
+    "why": "dive into Create, pull back out on the stats",
+    "surprise": "completion ring widget"
+   }
+  },
+  {
+   "type": "outro",
+   "beats": 8,
+   "wordmark": "Orbit",
+   "sub": "HABIT TRACKER",
+   "tagline": "Show up. *Every day.",
+   "pills": [
+    "App Store",
+    "Google Play"
+   ],
+   "cta": "Get Orbit free"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "marketing-video",
+  "description": "Marketing-video studio for Claude Code: promo and launch videos for websites and mobile apps.",
+  "owner": {
+    "name": "ernklyc",
+    "url": "https://github.com/ernklyc"
+  },
+  "plugins": [
+    {
+      "name": "marketing-video",
+      "source": "./plugins/marketing-video",
+      "description": "A marketing-video studio for Claude Code: interviews you, films your website or iOS app, and renders professional vertical promo videos with Remotion — 60 fps, real motion blur, beat-synced music and sound design, automatic QA."
+    }
+  ]
+}

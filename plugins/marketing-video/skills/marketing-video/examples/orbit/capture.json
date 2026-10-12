@@ -1,0 +1,29 @@
+{
+ "baseUrl": "http://127.0.0.1:8811",
+ "locale": "en-US",
+ "clips": {
+  "today": { "url": "/", "steps": [
+   ["wait", 900],
+   ["tap", { "selector": "#h-run .chk" }], ["wait", 1900],
+   ["tap", { "selector": "#wplus" }], ["wait", 650],
+   ["tap", { "selector": "#wplus" }], ["wait", 650],
+   ["tap", { "selector": "#wplus" }], ["wait", 2000]
+  ] },
+  "add": { "url": "/", "steps": [
+   ["wait", 700],
+   ["tap", { "selector": "#fab" }], ["wait", 1100],
+   ["tap", { "selector": "#field" }], ["wait", 1500],
+   ["tap", { "selector": "#ic-stretch" }], ["wait", 900],
+   ["tap", { "selector": "#days div:nth-child(6)" }], ["wait", 900],
+   ["tap", { "selector": "#tplus" }], ["wait", 500],
+   ["tap", { "selector": "#tplus" }], ["wait", 1300],
+   ["tap", { "selector": "#create" }], ["wait", 2600]
+  ] },
+  "stats": { "url": "/", "steps": [
+   ["wait", 600],
+   ["tap", { "selector": "#t-stats" }], ["wait", 1700],
+   ["tap", { "selector": "#sm" }], ["wait", 2000],
+   ["scroll", { "by": 260 }, 1500], ["wait", 1200]
+  ] }
+ }
+}

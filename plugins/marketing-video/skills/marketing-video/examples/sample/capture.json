@@ -1,0 +1,18 @@
+{
+ "baseUrl": "https://example.com",
+ "locale": "en-US",
+ "clock": "2026-01-15T09:41:00Z",
+ "clips": {
+  "home": {
+   "url": "/",
+   "steps": [
+    ["wait", 900],
+    ["scroll", { "by": 300 }, 1200],
+    ["wait", 600],
+    ["tap", { "text": "Learn more" }],
+    ["load"],
+    ["wait", 1200]
+   ]
+  }
+ }
+}

@@ -1,0 +1,18 @@
+# Maestro flow for capture/flutter/simclip.py (works for any iOS app, not only Flutter).
+# Point taps use integer percentages of the screen; `label` names the tap for callouts and sound design.
+# The extendedWaitUntil on a text that never appears is a fixed pause — give every featured step ~1.5–2 s so a
+# callout can explain it while the app is still.
+appId: com.example.yourapp
+---
+- tapOn: { point: "20%,30%", label: "Filters" }
+- extendedWaitUntil:
+    visible: "zz-never-visible"
+    timeout: 1800
+    optional: true
+- tapOn: { point: "86%,65%", label: "Only mine" }
+- extendedWaitUntil:
+    visible: "zz-never-visible"
+    timeout: 1800
+    optional: true
+- swipe: { start: "50%,80%", end: "50%,40%", duration: 1600 }
+- waitForAnimationToEnd: { timeout: 1500 }

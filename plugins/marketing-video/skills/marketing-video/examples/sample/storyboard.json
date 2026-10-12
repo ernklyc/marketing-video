@@ -1,0 +1,184 @@
+{
+ "name": "sample",
+ "brief": {
+  "message": "Plan your day in seconds with smart filters and reminders",
+  "tone": "fresh · sporty · new feature",
+  "feel": "this is effortless",
+  "audience": "busy people",
+  "channel": "Reels/TikTok vertical, with music",
+  "banned": [
+   "crossfade",
+   "bouncy easing",
+   "glow on UI text",
+   "particles",
+   "text over UI",
+   "two phones on screen",
+   "dead frame > 1 s"
+  ]
+ },
+ "fps": 30,
+ "bpm": 128,
+ "format": "reels",
+ "music": {
+  "src": "music.wav",
+  "mood": "bright"
+ },
+ "sfx": {
+  "src": "sfx.wav"
+ },
+ "brand": {
+  "look": "flood",
+  "grain": 0.35,
+  "vignette": 0.5,
+  "handheld": 1,
+  "hlStyle": "color",
+  "calloutStyle": "zoom",
+  "colors": {
+   "bg": "#0B1620",
+   "bg2": "#132430",
+   "card": "#15191C",
+   "ink": "#FFFFFF",
+   "inkSoft": "#97A6B4",
+   "accent": "#7CF2C8",
+   "accent2": "#A8FFE0",
+   "squiggle": "#7CF2C8",
+   "dark": "#0B1620",
+   "darkInk": "#FFFFFF",
+   "shadow": "#000000",
+   "onAccent": "#0B1620"
+  },
+  "fonts": {
+   "display": "Figtree",
+   "displayWeight": 800,
+   "serif": "Figtree"
+  },
+  "logo": "assets/app-icon.png",
+  "world": {
+   "kind": "aurora",
+   "colors": [
+    "#7CF2C8",
+    "#0B1620",
+    "#1C3B33",
+    "#A8FFE0"
+   ],
+   "symbols": [
+    "calendar",
+    "clock",
+    "check",
+    "star",
+    "bolt"
+   ],
+   "rays": true,
+   "floor": true
+  }
+ },
+ "sections": [
+  {
+   "type": "hook",
+   "beats": 6,
+   "lines": [
+    {
+     "text": "Every task",
+     "size": 120
+    },
+    {
+     "text": "*in its place.",
+     "size": 110
+    }
+   ]
+  },
+  {
+   "type": "feature",
+   "beats": 16,
+   "chip": "Smart Filters",
+   "transition": "whip",
+   "clip": {
+    "name": "demo",
+    "from": 0.3
+   },
+   "titles": [
+    {
+     "at": 0,
+     "l1": "Filters,",
+     "l2": "*one tap away."
+    }
+   ],
+   "callouts": [
+    {
+     "tap": 1,
+     "text": "Your view",
+     "sub": "All · Mine · Team",
+     "icon": "users",
+     "beats": 5
+    }
+   ],
+   "ledger": {
+    "why": "the phone whips in on the drop",
+    "surprise": "arrow callout",
+    "new_component": "arrow callout synced to the tap"
+   }
+  },
+  {
+   "type": "feature",
+   "beats": 16,
+   "chip": "Date & Time",
+   "transition": "flood",
+   "clip": {
+    "name": "demo",
+    "from": 8.0,
+    "holds": [
+     [
+      10.2,
+      0.8
+     ]
+    ]
+   },
+   "titles": [
+    {
+     "at": 0,
+     "l1": "Pick your day,",
+     "l2": "*pick your time."
+    }
+   ],
+   "callouts": [
+    {
+     "tap": 4,
+     "text": "Evening reminders",
+     "sub": "after 18:00",
+     "icon": "clock",
+     "beats": 5
+    }
+   ],
+   "widgets": [
+    {
+     "type": "list",
+     "at": 11.5,
+     "beats": 4,
+     "label": "Your filters",
+     "items": [
+      "Due today",
+      "High priority",
+      "Evening"
+     ]
+    }
+   ],
+   "ledger": {
+    "why": "the tap floods the screen and contracts into the next screen",
+    "surprise": "flood",
+    "new_component": "filter summary widget"
+   }
+  },
+  {
+   "type": "outro",
+   "beats": 8,
+   "wordmark": "ACME",
+   "sub": "TASKS",
+   "tagline": "Plan. Do. *Done.",
+   "pills": [
+    "App Store",
+    "Google Play"
+   ],
+   "cta": "Try it free"
+  }
+ ]
+}
